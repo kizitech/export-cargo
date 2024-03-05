@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
+import TrackerPage from './pages/TrackerPage';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Route path='/home' element={<HomePage />} />
         <Route path='/' element={<Navigate to="/home" />} />
         <Route path='/contact' element={<ContactPage />} />
+        <Route path='/tracker' element={<TrackerPage />} />
       </Routes>
       <Footer />
     </Router>
