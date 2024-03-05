@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/home' element={<HomePage />} />
         <Route path='/' element={<Navigate to="/home" />} />
+        <Route path='/contact' element={<ContactPage />} />
       </Routes>
       <Footer />
     </Router>
