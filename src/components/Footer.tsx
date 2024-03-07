@@ -3,7 +3,7 @@ import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className='w-full bg-white pt-24 pb-2 px-4'>
+        <footer className='w-full bg-white pt-10 pb-2 px-4'>
             <section className='max-w-7xl m-auto flex flex-col gap-8'>
                 <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 uppercase tracking-wide">
                     Export Cargo

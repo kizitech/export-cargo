@@ -19,9 +19,9 @@ const Navbar = () => {
                 </h1>
                 <div className="flex items-center">
                     <ul className='hidden md:flex gap-10 transition-all'>
-                        <NavLink to="#"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Home</li></NavLink>
-                        <NavLink to="#about"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">About Us</li></NavLink>
-                        <NavLink to="#service"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Services</li></NavLink>
+                        <NavLink to="/#"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Home</li></NavLink>
+                        <NavLink to="/#about"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">About Us</li></NavLink>
+                        <NavLink to="/#service"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Services</li></NavLink>
                         <NavLink to="/contact"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Contact</li></NavLink>
                     </ul>
                 </div>
@@ -38,9 +38,9 @@ const Navbar = () => {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 200 }}
                     className={toggle ? 'absolute z-10 bg-white p-4 w-full shadow-2xl md:hidden' : 'hidden'}>
-                    <NavLink to="#"><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Home</li></NavLink>
-                    <NavLink to="#about"><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">About Us</li></NavLink>
-                    <NavLink to="#service"><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Services</li></NavLink>
+                    <NavLink to="/#"><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Home</li></NavLink>
+                    <NavLink to="/#about"><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">About Us</li></NavLink>
+                    <NavLink to="/#service"><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Services</li></NavLink>
                     <NavLink to="/contact"><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Contact</li></NavLink>
                     <div className='flex flex-col my-10 gap-4'>
                         <Link to="/tracker" className='px-8 py-5 text-center bg-dark text-white rounded'>Cargo Tracker</Link>

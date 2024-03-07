@@ -4,7 +4,7 @@ const TrackCargoForm: React.FC = () => {
 
     return (
         <div className="h-screen bg-gray-50 flex  flex-col gap-20 justify-center items-center px-4">
-            <h1 className='font-extrabold text-dark text-5xl'>Enter The Consigment No.</h1>
+            <h1 className='font-extrabold text-dark text-3xl lg:text-5xl text-center'>Enter The Consigment No.</h1>
             <div className="relative flex flex-col justify-center items-center mx-auto w-full max-w-3xl shadow-lg rounded-lg bg-white p-4">
                 <form className='w-full'>
                     <label htmlFor="search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Track</label>
