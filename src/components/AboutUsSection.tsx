@@ -1,5 +1,5 @@
 import React from 'react';
-import worker2 from '../assets/worker2.jpg'
+import airCargo from '../assets/air-cargo.jpg'
 import truck from '../assets/truck.jpg'
 
 const AboutUsSection: React.FC = () => {
@@ -13,8 +13,8 @@ const AboutUsSection: React.FC = () => {
                 </div>
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
-                    <img className="w-full rounded-lg object-cover h-[450px]" src={worker2} alt="One of our staff" />
-                    <img className="mt-4 w-full lg:mt-10 rounded-lg object-cover h-[450px]" src={truck} alt="our effiecient trucks" />
+                    <img className="w-full rounded-lg object-cover h-[450px] object-center" src={airCargo} alt="One of our air cargo" />
+                    <img className="mt-4 w-full lg:mt-10 rounded-lg object-cover h-[450px] object-center" src={truck} alt="our effiecient trucks" />
                 </div>
             </div>
         </section>
