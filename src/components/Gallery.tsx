@@ -17,7 +17,7 @@ const Gallery: React.FC = () => {
     ];
 
     return (
-        <section className='w-full mx-auto bg-gray-800 pt-16 pb-8'>
+        <section className='w-full mx-auto bg-gray-800 pt-16 px-4 lg:px-0 pb-8'>
             <div className="text-center mb-12">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">Cargo Export Gallery</h2>
                 <p className="text-snow mt-2 text-sm md:text-base">Explore our cargo export showcases.</p>
