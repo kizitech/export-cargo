@@ -40,7 +40,7 @@ const ContacthtmlForm: React.FC = () => {
 
                 <div className="flex flex-col lg:flex-row items-start gap-20 lg:gap-10">
                     <div className="flex flex-wrap">
-                        <div className="p-2 w-1/2">
+                        <div className="p-1.5 sm:p-2 w-1/2">
                             <div className="relative">
                                 <label htmlFor="name" className="leading-7 text-sm text-gray-600">
                                     Name
@@ -53,7 +53,7 @@ const ContacthtmlForm: React.FC = () => {
                                 />
                             </div>
                         </div>
-                        <div className="p-2 w-1/2">
+                        <div className="p-1.5 sm:p-2 w-1/2">
                             <div className="relative">
                                 <label
                                     htmlFor="email"
@@ -69,7 +69,7 @@ const ContacthtmlForm: React.FC = () => {
                                 />
                             </div>
                         </div>
-                        <div className="p-2 w-1/2">
+                        <div className="p-1.5 sm:p-2 w-1/2">
                             <div className="relative">
                                 <label htmlFor="subject" className="leading-7 text-sm text-gray-600">
                                     Subject
@@ -82,7 +82,7 @@ const ContacthtmlForm: React.FC = () => {
                                 />
                             </div>
                         </div>
-                        <div className="p-2 w-1/2">
+                        <div className="p-1.5 sm:p-2 w-1/2">
                             <div className="relative">
                                 <label
                                     htmlFor="phone"
