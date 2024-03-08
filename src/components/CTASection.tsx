@@ -2,7 +2,7 @@ import React from 'react'
 import cargo from '../assets/cargo.jpg'
 import { Link } from 'react-router-dom';
 
-const CTA: React.FC = () => {
+const CTASection: React.FC = () => {
     return (
         <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
             <div className="absolute inset-0">
@@ -16,8 +16,7 @@ const CTA: React.FC = () => {
                 <Link to="/contact" className="px-10 py-3 bg-white hover:bg-opacity-95 text-dark rounded transition duration-300 ease-in-out transform  hover:shadow-lg">Get Started</Link>
             </div>
         </div>
-
     )
 };
 
-export default CTA
+export default CTASection

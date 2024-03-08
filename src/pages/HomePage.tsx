@@ -4,7 +4,7 @@ import StatisticSection from '../components/StatisticSection'
 import PartnershipSection from '../components/PartnershipSection'
 import AboutUsSection from '../components/AboutUsSection'
 import Gallery from '../components/Gallery'
-import CTA from '../components/CTA'
+import CTASection from '../components/CTASection'
 
 const HomePage = () => {
     return (
@@ -13,7 +13,7 @@ const HomePage = () => {
             <PartnershipSection />
             <AboutUsSection />
             <StatisticSection />
-            <CTA />
+            <CTASection />
             <ServiceSection />
             <Gallery />
         </>
