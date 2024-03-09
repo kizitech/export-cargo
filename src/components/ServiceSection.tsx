@@ -56,7 +56,7 @@ const ServiceCard: React.FC<Service> = ({ title, description, Icon }) => {
 
 const ServiceSection: React.FC = () => {
     return (
-        <div className=" p-4 py-14 mx-auto bg-white w-full">
+        <div id='services' className="p-4 py-14 mx-auto bg-white w-full">
             <div className="max-w-[1240px] mx-auto">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 text-center">Our Services</h2>
                 <p className="text-gray-600 mt-2 mb-20 text-sm md:text-base text-center">Explore our wide range of services designed to meet your logistics needs.</p>
