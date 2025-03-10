@@ -36,6 +36,7 @@ const Navbar = () => {
                     <img src={toggle ? Close : Hamburger} alt="hamburger" />
                 </motion.div>
             </div>
+            
             <div className='w-full relative'>
                 <motion.ul
                     initial={{ opacity: 0, x: 200 }}
