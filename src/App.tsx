@@ -6,7 +6,6 @@ import ContactPage from './pages/ContactPage';
 import TrackerPage from './pages/TrackerPage';
 
 function App() {
-
   return (
     <Router>
       <Navbar />
