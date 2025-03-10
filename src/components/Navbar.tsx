@@ -23,8 +23,8 @@ const Navbar = () => {
                 </h1>
                 <div className="flex items-center">
                     <ul className='hidden md:flex gap-10 transition-all'>
-                        <Link to="/home"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Home</li></Link>
-                        <Link to="#about"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">About Us</li></Link>
+                        <Link to="/"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Home</li></Link>
+                        <Link to="//#about"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">About Us</li></Link>
                         <Link to="/#services"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Services</li></Link>
                         <Link to="/contact"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Contact</li></Link>
                     </ul>
