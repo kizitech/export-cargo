@@ -1,12 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Hamburger from "../assets/hamburgerMenu.svg";
 import Close from "../assets/close.svg";
 
 const Navbar: React.FC = () => {
   const [toggle, setToggle] = useState<boolean>(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  // Scroll to the section if the URL contains a hash (e.g., /#about)
+  useEffect(() => {
+    if (location.hash) {
+      const sectionId = location.hash.replace("#", "");
+      setTimeout(() => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100); // Delay to ensure DOM is ready
+    }
+  }, [location]);
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -16,22 +30,17 @@ const Navbar: React.FC = () => {
     setToggle(false);
   };
 
-  // Scroll to section smoothly
-  const handleScroll = (id: string) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      setToggle(false); // Close mobile menu after clicking
-    }
-  };
-
-  // Handle navigation for internal links when user is on a different route
+  // Navigate and scroll
   const handleNavigate = (id: string) => {
     if (location.pathname !== "/") {
-      window.location.href = `/#${id}`;
+      navigate(`/#${id}`); // Redirect to homepage with section hash
     } else {
-      handleScroll(id);
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     }
+    setToggle(false); // Close mobile menu after clicking
   };
 
   return (
