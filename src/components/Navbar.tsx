@@ -43,8 +43,8 @@ const Navbar = () => {
                     exit={{ opacity: 0, x: 200 }}
                     className={toggle ? 'absolute z-10 bg-white p-4 w-full shadow-2xl md:hidden' : 'hidden'}>
                     <Link to="/home" onClick={handleCloseMobileNav}><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Home</li></Link>
-                    <Link to="/home#about" onClick={handleCloseMobileNav}><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">About Us</li></a>
-                    <Link to="/home#services" onClick={handleCloseMobileNav}><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Services</li></a>
+                    <Link to="/home#about" onClick={handleCloseMobileNav}><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">About Us</li></Link>
+                    <Link to="/home#services" onClick={handleCloseMobileNav}><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Services</li></Link>
                     <Link to="/contact" onClick={handleCloseMobileNav}><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Contact</li></Link>
                     <div className='flex flex-col my-10 gap-4'>
                         <Link to="/tracker" onClick={handleCloseMobileNav} className='px-8 py-5 text-center bg-dark text-white rounded'>Cargo Tracker</Link>
