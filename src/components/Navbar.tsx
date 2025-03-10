@@ -24,8 +24,8 @@ const Navbar = () => {
                 <div className="flex items-center">
                     <ul className='hidden md:flex gap-10 transition-all'>
                         <Link to="/home"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Home</li></Link>
-                        <Link href="#about"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">About Us</li></Link>
-                        <Link href="#services"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Services</li></Link>
+                        <Link href="/home#about"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">About Us</li></Link>
+                        <Link href="/home#services"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Services</li></Link>
                         <Link to="/contact"><li className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300">Contact</li></Link>
                     </ul>
                 </div>
@@ -43,8 +43,8 @@ const Navbar = () => {
                     exit={{ opacity: 0, x: 200 }}
                     className={toggle ? 'absolute z-10 bg-white p-4 w-full shadow-2xl md:hidden' : 'hidden'}>
                     <Link to="/home" onClick={handleCloseMobileNav}><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Home</li></Link>
-                    <a href="#about" onClick={handleCloseMobileNav}><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">About Us</li></a>
-                    <a href="#services" onClick={handleCloseMobileNav}><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Services</li></a>
+                    <Link href="/home#about" onClick={handleCloseMobileNav}><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">About Us</li></a>
+                    <Link href="/home#services" onClick={handleCloseMobileNav}><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Services</li></a>
                     <Link to="/contact" onClick={handleCloseMobileNav}><li className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded">Contact</li></Link>
                     <div className='flex flex-col my-10 gap-4'>
                         <Link to="/tracker" onClick={handleCloseMobileNav} className='px-8 py-5 text-center bg-dark text-white rounded'>Cargo Tracker</Link>
