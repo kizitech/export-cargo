@@ -9,7 +9,6 @@ const Navbar: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Scroll to the section if the URL contains a hash (e.g., /#about)
   useEffect(() => {
     if (location.hash) {
       const sectionId = location.hash.replace("#", "");
@@ -18,7 +17,7 @@ const Navbar: React.FC = () => {
         if (section) {
           section.scrollIntoView({ behavior: "smooth" });
         }
-      }, 100); // Delay to ensure DOM is ready
+      }, 100); 
     }
   }, [location]);
 
@@ -33,14 +32,14 @@ const Navbar: React.FC = () => {
   // Navigate and scroll
   const handleNavigate = (id: string) => {
     if (location.pathname !== "/") {
-      navigate(`/#${id}`); // Redirect to homepage with section hash
+      navigate(`/#${id}`); 
     } else {
       const section = document.getElementById(id);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }
     }
-    setToggle(false); // Close mobile menu after clicking
+    setToggle(false);
   };
 
   return (
