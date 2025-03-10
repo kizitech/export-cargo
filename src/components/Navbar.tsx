@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Hamburger from "../assets/hamburgerMenu.svg";
 import Close from "../assets/close.svg";
 
-const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+const Navbar: React.FC = () => {
+  const [toggle, setToggle] = useState<boolean>(false);
+  const location = useLocation();
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -16,11 +17,20 @@ const Navbar = () => {
   };
 
   // Scroll to section smoothly
-  const handleScroll = (id) => {
+  const handleScroll = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
       setToggle(false); // Close mobile menu after clicking
+    }
+  };
+
+  // Handle navigation for internal links when user is on a different route
+  const handleNavigate = (id: string) => {
+    if (location.pathname !== "/") {
+      window.location.href = `/#${id}`;
+    } else {
+      handleScroll(id);
     }
   };
 
@@ -41,13 +51,13 @@ const Navbar = () => {
             </Link>
             <li
               className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300"
-              onClick={() => handleScroll("about")}
+              onClick={() => handleNavigate("about")}
             >
               About Us
             </li>
             <li
               className="text-dark hover:text-dark3 cursor-pointer transition-colors duration-300"
-              onClick={() => handleScroll("services")}
+              onClick={() => handleNavigate("services")}
             >
               Services
             </li>
@@ -87,13 +97,13 @@ const Navbar = () => {
           </Link>
           <li
             className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded"
-            onClick={() => handleScroll("about")}
+            onClick={() => handleNavigate("about")}
           >
             About Us
           </li>
           <li
             className="text-dark p-4 hover:bg-gray-50 cursor-pointer transition ease-out duration-300 rounded"
-            onClick={() => handleScroll("services")}
+            onClick={() => handleNavigate("services")}
           >
             Services
           </li>
